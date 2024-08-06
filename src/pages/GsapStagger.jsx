@@ -12,9 +12,13 @@ const GsapStagger = () => {
       duration:2,
       ease:"back.inOut" ,
       scale:1,
-      stagger:1,
       repeat:-1,
       yoyo:true,
+      stagger:{
+        amount:1.5,
+        grid:[2,1],
+        from:'end'
+      }
     })
   },[]);
 
