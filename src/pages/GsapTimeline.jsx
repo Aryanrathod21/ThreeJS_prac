@@ -71,12 +71,12 @@ const GsapTimeline = () => {
 
       <div className="mt-20 space-y-10">
         <button onClick={() => {
-          // if (timeline.paused()) {
-          //   timeline.play();
+          if (timeline.paused()) {
+            timeline.play();
             
-          // }else{
-          //   timeline.pause();
-          // }
+          }else{
+            timeline.pause();
+          }
         }}>Play/Pause</button>
 
         <div id="yellow-box" className="w-20 h-20 bg-yellow-500 rounded-lg" />
